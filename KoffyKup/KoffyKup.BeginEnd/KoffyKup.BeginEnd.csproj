@@ -40,10 +40,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BeginEnd.cs" />
+    <Compile Include="BeginDoEnd.cs" />
+    <Compile Include="BeginEndAgent.cs" />
+    <Compile Include="BeginEndWrapper.cs" />
     <Compile Include="IBeginEnd.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SampleUsage.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

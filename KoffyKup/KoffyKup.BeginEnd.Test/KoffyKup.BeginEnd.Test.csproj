@@ -48,11 +48,19 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BeginEndTest.cs" />
+    <Compile Include="BeginEndWrapperTest.cs" />
+    <Compile Include="BeginDoEndTest.cs" />
+    <Compile Include="BeginEndAgentTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\KoffyKup.BeginEnd\KoffyKup.BeginEnd.csproj">
+      <Project>{1548f17c-f077-4b1a-a27a-a242512a4dfa}</Project>
+      <Name>KoffyKup.BeginEnd</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

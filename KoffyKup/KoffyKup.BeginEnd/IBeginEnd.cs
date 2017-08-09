@@ -7,7 +7,4 @@ namespace KoffyKup.BeginEnd
         void End();
     }
 
-    public interface IBeginEnd<T> : IBeginEnd
-    {
-    }
 }
