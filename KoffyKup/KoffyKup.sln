@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KoffyKup.BeginEnd", "KoffyK
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KoffyKup.BeginEnd.Test", "KoffyKup.BeginEnd.Test\KoffyKup.BeginEnd.Test.csproj", "{F6153513-15F3-4F51-AFE8-0F2F130C0633}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KoffyKup.BeginEnd.Examples", "KoffyKup.BeginEnd.Examples\KoffyKup.BeginEnd.Examples.csproj", "{12CB3A7B-7F34-4524-AAC1-5432E5F1DF7E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{F6153513-15F3-4F51-AFE8-0F2F130C0633}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F6153513-15F3-4F51-AFE8-0F2F130C0633}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F6153513-15F3-4F51-AFE8-0F2F130C0633}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12CB3A7B-7F34-4524-AAC1-5432E5F1DF7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12CB3A7B-7F34-4524-AAC1-5432E5F1DF7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12CB3A7B-7F34-4524-AAC1-5432E5F1DF7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12CB3A7B-7F34-4524-AAC1-5432E5F1DF7E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -52,6 +52,7 @@
     <Compile Include="BeginDoEndTest.cs" />
     <Compile Include="BeginEndAgentTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tracer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

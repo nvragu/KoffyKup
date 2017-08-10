@@ -8,10 +8,6 @@ namespace KoffyKup.BeginEnd
     /// </summary>
     public class BeginEndWrapper : IBeginEnd
     {
-        public BeginEndWrapper(bool skipBegin)
-        {
-            if (!skipBegin) Begin();
-        }
         public BeginEndWrapper()
         {
             Begin();

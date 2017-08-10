@@ -1,6 +1,5 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using KoffyKup.BeginEnd;
 namespace KoffyKup.BeginEnd.Test
 {
     [TestClass]

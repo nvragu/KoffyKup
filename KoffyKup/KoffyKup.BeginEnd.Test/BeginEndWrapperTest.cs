@@ -61,23 +61,4 @@ namespace KoffyKup.BeginEnd.Test
             }
         }
     }
-
-    public class Tracer : BeginEndWrapper
-    {
-        List<string> _messages;
-        public Tracer(List<string> messages) : base(true)
-        {
-            _messages = messages;
-            base.Begin();
-        }
-        public override void Begin()
-        {
-            _messages.Add("Begin");
-        }
-
-        public override void End()
-        {
-            _messages.Add("End");
-        }
-    }
 }
