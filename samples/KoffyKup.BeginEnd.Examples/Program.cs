@@ -20,6 +20,7 @@ namespace KoffyKup.BeginEnd.Examples
             {
                 var i = 100;
                 i++;
+                throw new Exception("General exception");
             }
             ).MeasureTime((x) => Console.WriteLine(x.CpuTime))
             .HandleException((ex) => Console.WriteLine(ex.Message))
