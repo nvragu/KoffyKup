@@ -3,11 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KoffyKup.BeginEnd", "KoffyKup.BeginEnd\KoffyKup.BeginEnd.csproj", "{1548F17C-F077-4B1A-A27A-A242512A4DFA}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C47703A1-E7D0-405F-8136-8B145D936260}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KoffyKup.BeginEnd.Test", "KoffyKup.BeginEnd.Test\KoffyKup.BeginEnd.Test.csproj", "{F6153513-15F3-4F51-AFE8-0F2F130C0633}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KoffyKup.BeginEnd", "src\KoffyKup.BeginEnd\KoffyKup.BeginEnd.csproj", "{1548F17C-F077-4B1A-A27A-A242512A4DFA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KoffyKup.BeginEnd.Examples", "KoffyKup.BeginEnd.Examples\KoffyKup.BeginEnd.Examples.csproj", "{12CB3A7B-7F34-4524-AAC1-5432E5F1DF7E}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{67C1AA8F-862C-4FF5-BAFC-C4A7413FA750}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KoffyKup.BeginEnd.Examples", "samples\KoffyKup.BeginEnd.Examples\KoffyKup.BeginEnd.Examples.csproj", "{12CB3A7B-7F34-4524-AAC1-5432E5F1DF7E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{07634440-275C-4F7E-8DE7-5DB3A11AF86D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KoffyKup.BeginEnd.Test", "tests\KoffyKup.BeginEnd.Test\KoffyKup.BeginEnd.Test.csproj", "{F6153513-15F3-4F51-AFE8-0F2F130C0633}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KoffyKup.Code", "KoffyKup.Code\KoffyKup.Code.csproj", "{F1995274-BE47-48EB-B512-397D1403AE0C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,16 +27,29 @@ Global
 		{1548F17C-F077-4B1A-A27A-A242512A4DFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1548F17C-F077-4B1A-A27A-A242512A4DFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1548F17C-F077-4B1A-A27A-A242512A4DFA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F6153513-15F3-4F51-AFE8-0F2F130C0633}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F6153513-15F3-4F51-AFE8-0F2F130C0633}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F6153513-15F3-4F51-AFE8-0F2F130C0633}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F6153513-15F3-4F51-AFE8-0F2F130C0633}.Release|Any CPU.Build.0 = Release|Any CPU
 		{12CB3A7B-7F34-4524-AAC1-5432E5F1DF7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{12CB3A7B-7F34-4524-AAC1-5432E5F1DF7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{12CB3A7B-7F34-4524-AAC1-5432E5F1DF7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{12CB3A7B-7F34-4524-AAC1-5432E5F1DF7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6153513-15F3-4F51-AFE8-0F2F130C0633}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6153513-15F3-4F51-AFE8-0F2F130C0633}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6153513-15F3-4F51-AFE8-0F2F130C0633}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6153513-15F3-4F51-AFE8-0F2F130C0633}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1995274-BE47-48EB-B512-397D1403AE0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1995274-BE47-48EB-B512-397D1403AE0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1995274-BE47-48EB-B512-397D1403AE0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1995274-BE47-48EB-B512-397D1403AE0C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1548F17C-F077-4B1A-A27A-A242512A4DFA} = {C47703A1-E7D0-405F-8136-8B145D936260}
+		{12CB3A7B-7F34-4524-AAC1-5432E5F1DF7E} = {67C1AA8F-862C-4FF5-BAFC-C4A7413FA750}
+		{F6153513-15F3-4F51-AFE8-0F2F130C0633} = {07634440-275C-4F7E-8DE7-5DB3A11AF86D}
+		{F1995274-BE47-48EB-B512-397D1403AE0C} = {C47703A1-E7D0-405F-8136-8B145D936260}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {42F96D86-A080-4414-9072-F5F3BE035BBE}
 	EndGlobalSection
 EndGlobal

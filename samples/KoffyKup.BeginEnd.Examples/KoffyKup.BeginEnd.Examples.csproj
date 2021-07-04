@@ -8,9 +8,10 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>KoffyKup.BeginEnd.Examples</RootNamespace>
     <AssemblyName>KoffyKup.BeginEnd.Examples</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -50,7 +51,11 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\KoffyKup.BeginEnd\KoffyKup.BeginEnd.csproj">
+    <ProjectReference Include="..\..\KoffyKup.Code\KoffyKup.Code.csproj">
+      <Project>{f1995274-be47-48eb-b512-397d1403ae0c}</Project>
+      <Name>KoffyKup.Code</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\src\KoffyKup.BeginEnd\KoffyKup.BeginEnd.csproj">
       <Project>{1548f17c-f077-4b1a-a27a-a242512a4dfa}</Project>
       <Name>KoffyKup.BeginEnd</Name>
     </ProjectReference>

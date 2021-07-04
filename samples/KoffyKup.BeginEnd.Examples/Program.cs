@@ -1,19 +1,30 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿using KoffyKup.Code;
+using System;
 namespace KoffyKup.BeginEnd.Examples
 {
     class Program
     {
         static void Main(string[] args)
         {
+            CodeExternsionsTest();
             BeginDoEndExample();
             BeginEndAgentExample();
             BeginEndWrapperExample();
             Console.ReadLine();
+        }
+
+        private static void CodeExternsionsTest()
+        {
+            CodeExtensions.Code(
+            () =>
+            {
+                var i = 100;
+                i++;
+            }
+            ).MeasureTime((x) => Console.WriteLine(x.CpuTime))
+            .HandleException((ex) => Console.WriteLine(ex.Message))
+            .PreAndPost(() => Console.WriteLine("PreAction"), () => Console.WriteLine("PostAction"))
+            ();
         }
 
         private static void BeginEndAgentExample()
