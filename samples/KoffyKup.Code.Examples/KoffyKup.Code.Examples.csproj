@@ -45,19 +45,14 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Tracer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\KoffyKup.Code\KoffyKup.Code.csproj">
-      <Project>{f1995274-be47-48eb-b512-397d1403ae0c}</Project>
+    <ProjectReference Include="..\..\src\KoffyKup.Code\KoffyKup.Code.csproj">
+      <Project>{41432fdc-995d-4880-ba03-2577cd4487c6}</Project>
       <Name>KoffyKup.Code</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\src\KoffyKup.BeginEnd\KoffyKup.BeginEnd.csproj">
-      <Project>{1548f17c-f077-4b1a-a27a-a242512a4dfa}</Project>
-      <Name>KoffyKup.BeginEnd</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
