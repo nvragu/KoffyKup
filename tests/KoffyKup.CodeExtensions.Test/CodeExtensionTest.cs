@@ -46,6 +46,11 @@ namespace KoffyKup.CodeExtensions.Test
                     var j = i + i;
                 }
                 System.Threading.Thread.Sleep(1000);
+                throw new System.Exception("break this flow");
+                for (int i = 0; i < 10000000; i++)
+                {
+                    var j = i + i;
+                }
             }).MeasureTime(metric =>
             {
                 Assert.IsTrue(metric.CpuTime > 0);
